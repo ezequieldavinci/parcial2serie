@@ -1,0 +1,71 @@
+.contacto-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #e50914;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 1.3em;
+  color: #e50914;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:invalid:focus, textarea:invalid:focus {
+  border: 2px solid red;
+}
+
+.btn-enviar, .btn-volver {
+  background-color: #e50914;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover, .btn-volver:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff2a2a;
+}
+
+/* Botón Volver al Menú Principal debajo del formulario */
+.contacto-form .volver {
+  margin-top: 40px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Separar botón Volver al Menú Principal en confirmacion.html */
+#confirmacion .volver {
+  margin-top: 30px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
